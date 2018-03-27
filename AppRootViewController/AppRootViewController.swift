@@ -9,8 +9,8 @@
 import UIKit
 
 open class AppRootViewController: UIViewController {
-  private(set) var childVC = UIViewController()
-  static let root = AppRootViewController()
+  open private(set) var childVC = UIViewController()
+  open static let root = AppRootViewController()
   
   open override func viewDidLoad() {
     super.viewDidLoad()

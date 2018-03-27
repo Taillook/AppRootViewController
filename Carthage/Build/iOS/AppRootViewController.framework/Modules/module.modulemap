@@ -1,0 +1,6 @@
+framework module AppRootViewController {
+  umbrella header "AppRootViewController.h"
+
+  export *
+  module * { export * }
+}

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C9858EC2206A0C49003D7DAB /* AppRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C9858EC0206A0C49003D7DAB /* AppRootViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9858F05206A240F003D7DAB /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9858F04206A240F003D7DAB /* AppRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9858EBD206A0C49003D7DAB /* AppRootViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppRootViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9858EC0206A0C49003D7DAB /* AppRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppRootViewController.h; sourceTree = "<group>"; };
 		C9858EC1206A0C49003D7DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9858F04206A240F003D7DAB /* AppRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				C9858EC0206A0C49003D7DAB /* AppRootViewController.h */,
+				C9858F04206A240F003D7DAB /* AppRootViewController.swift */,
 				C9858EC1206A0C49003D7DAB /* Info.plist */,
 			);
 			path = AppRootViewController;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					C9858EBC206A0C49003D7DAB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9858F05206A240F003D7DAB /* AppRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		C9858EC6206A0C49003D7DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.grapebread.AppRootViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		C9858EC7206A0C49003D7DAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

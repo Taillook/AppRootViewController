@@ -4,3 +4,8 @@ framework module AppRootViewController {
   export *
   module * { export * }
 }
+
+module AppRootViewController.Swift {
+    header "AppRootViewController-Swift.h"
+    requires objc
+}

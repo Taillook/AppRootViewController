@@ -21,7 +21,7 @@ open class AppRootViewController: UIViewController {
     childVC.willMove(toParentViewController: nil)
     childVC.view.removeFromSuperview()
     childVC.removeFromParentViewController()
-    
+    dismiss(animated: true, completion: nil)
     addChildViewController(newVC)
     view.addSubview(newVC.view)
     newVC.didMove(toParentViewController: self)

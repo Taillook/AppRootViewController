@@ -18,6 +18,7 @@ open class AppRootViewController: UIViewController {
   }
   
   open func changeVC(newVC: UIViewController) {
+    dismiss(animated: true, completion: nil)
     childVC.willMove(toParentViewController: nil)
     childVC.view.removeFromSuperview()
     childVC.removeFromParentViewController()
